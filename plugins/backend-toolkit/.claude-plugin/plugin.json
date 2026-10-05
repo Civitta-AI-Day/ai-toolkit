@@ -1,6 +1,6 @@
 {
   "name": "backend-toolkit",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Stack-agnostic backend toolkit, built by the backend team on AI Day",
   "author": {
     "name": "Civitta Backend Team"
