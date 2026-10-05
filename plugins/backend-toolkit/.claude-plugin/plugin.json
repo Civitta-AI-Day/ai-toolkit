@@ -1,8 +1,18 @@
 {
   "name": "backend-toolkit",
-  "version": "0.6.0",
-  "description": "Stack-agnostic backend toolkit, built by the backend team on AI Day",
+  "displayName": "Backend Toolkit",
+  "version": "1.0.0",
+  "description": "Stack-agnostic toolkit for backend work: onboard any repo (writes CLAUDE.md), implement tickets the project's way, review security, protect secrets and migrations, format on edit, and read tickets from Linear (read-only).",
   "author": {
     "name": "Civitta Backend Team"
-  }
+  },
+  "keywords": [
+    "backend",
+    "api",
+    "security",
+    "django",
+    "laravel",
+    "node",
+    "go"
+  ]
 }
