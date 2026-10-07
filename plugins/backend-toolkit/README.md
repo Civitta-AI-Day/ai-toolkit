@@ -10,7 +10,7 @@ Nothing in it is tied to one project; it reads each project's own conventions an
 | `security-reviewer` | Subagent | Read-only review for authorization gaps, missing validation, injection, data exposure, abuse, audit |
 | `protect` | Hook (before tools) | Blocks reading or copying `.env` files and private keys, and editing applied migrations |
 | `format` | Hook (after edits) | Formats each edited file with the project's own formatter (ruff, black, prettier, pint, gofmt) and reports lint errors back |
-| `linear` | MCP server | Read-only access to Linear: Claude reads tickets, acceptance criteria and comments by ID |
+| `linear` | MCP server | Linear access: Claude reads tickets, acceptance criteria and comments by ID, and posts one summary comment when the work is done |
 
 ## Install
 
@@ -40,8 +40,10 @@ Then restart Claude Code and check `/agents`, `/hooks` and `/mcp`.
 
 - `python3` for the hooks (any version 3.8+).
 - A Linear account with access to your team's workspace. The first time, run `/mcp` in Claude Code,
-  pick `linear` and sign in; the browser opens Linear's login. The server is read-only
-  (`https://mcp.linear.app/mcp/readonly`): Claude can read tickets but can't change them.
+  pick `linear` and sign in; the browser opens Linear's login. Claude acts as you in Linear. The
+  skills only read tickets and add one summary comment; they never change a ticket's status,
+  assignee, title or description. Claude Code asks you to approve the comment before it's posted.
+  For read-only access, change the URL in `.mcp.json` to `https://mcp.linear.app/mcp/readonly`.
 
 ## Make it install automatically in a repo
 

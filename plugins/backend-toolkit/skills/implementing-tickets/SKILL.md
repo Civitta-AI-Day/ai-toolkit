@@ -29,3 +29,8 @@ Follow these steps in order. The project's CLAUDE.md wins over anything here.
 8. **Review.** Ask the `security-reviewer` subagent to review the change, fix what it finds, and run
    the tests again.
 9. **Report** against the checklist from step 1: done, not done, and anything you assumed.
+10. **Comment on the ticket.** If the ticket came from Linear, post the report as **one** comment on
+    it with the `linear` MCP tools. Start with "Implemented with Claude Code", then: what changed (main
+    files), tests run and their result, the security review result, and anything not done or
+    assumed. Keep it under 15 lines and show the text to the user before posting. Only add a
+    comment: never change the ticket's status, assignee, title, description or labels.

@@ -2,7 +2,7 @@
   "name": "backend-toolkit",
   "displayName": "Backend Toolkit",
   "version": "1.0.0",
-  "description": "Stack-agnostic toolkit for backend work: onboard any repo (writes CLAUDE.md), implement tickets the project's way, review security, protect secrets and migrations, format on edit, and read tickets from Linear (read-only).",
+  "description": "Stack-agnostic toolkit for backend work: onboard any repo (writes CLAUDE.md), implement tickets the project's way, review security, protect secrets and migrations, format on edit, read tickets from Linear and post a summary comment when done.",
   "author": {
     "name": "Civitta Backend Team"
   },
