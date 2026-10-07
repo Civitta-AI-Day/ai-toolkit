@@ -6,7 +6,7 @@
     {
       "name": "backend-toolkit",
       "source": "./plugins/backend-toolkit",
-      "description": "Stack-agnostic backend toolkit: onboarding, ticket implementation, security review, safety hooks and read-only Linear access"
+      "description": "Stack-agnostic backend toolkit: onboarding, ticket implementation, security review, safety hooks and Linear (read tickets, post a summary comment)"
     }
   ]
 }
