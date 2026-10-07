@@ -40,5 +40,5 @@ Before pushing: `claude plugin validate .` and `claude plugin validate plugins/b
 | `stage-2-skill` | + `implementing-tickets` skill |
 | `stage-3-subagent` | + `security-reviewer` subagent |
 | `stage-4-hooks` | + `protect` and `format` hooks |
-| `stage-5-mcp` | + Linear MCP server (read-only) |
+| `stage-5-mcp` | + Linear MCP server (read tickets, post a summary comment) |
 | `stage-6-plugin` | The finished plugin: version 1.0.0, docs, auto-install snippet |
